@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <h1>PASSWOD GENERATOR</h1>
+
+            <div class="middle">
+                <input class="inp-pass" placeholder="YOUR PASSWORD" >
+                <div >
+                    <span class="copy-msg"></span>
+                    <button class="copy"><img class="img" src="copy.png" alt=""></button></div>
+                
+            </div>
+
+            <div class="lower">
+
+                <div class="len">
+                    <p>Password length</p>
+                    <p class="length">10</p>
+                </div>
+
+                <div class="slider">
+                    <input id="slider" type="range" min="5" max="15">
+                </div>
+
+                <div class="checkbox">
+
+                    <div>
+                        <input type="checkbox" name = "upper" checked id="upper">
+                    <label for="upper">Include Upper letter</label>
+                    </div>
+
+
+                    <div>
+                        <input type="checkbox" name = "lower"  id="lower">
+                    <label for="lower">Include lower letter</label>
+                    </div>
+
+
+                    <div>
+                        <input type="checkbox" name = "number" id="number">
+                    <label for="number">Include Number</label>
+                    </div>
+
+
+                    <div>
+                        <input type="checkbox" name = "symbol" id="symbol" >
+                    <label for="symbol">Include symbol</label>
+                    </div>
+
+                </div>
+
+                <div class="strength">
+
+                    <p>Password stength</p>
+                    <div class="torch"></div>
+                </div>
+
+                <button class="generate">GENERATE PASSWORD</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    
+</body>
+<script src="index.js"></script>
+</html>
